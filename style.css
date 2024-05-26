@@ -1,0 +1,225 @@
+/*
+ cascading style sheet
+ full website
+*/
+
+:root {
+  --pin-color: #ee82ee;
+  --big-color: hsl(210, 20%, 4%);
+  --small-color: hsl(0, 0%, 100%);
+  --btn-color: hsl(138, 100%, 54%);
+  --pale-color: hsl(198, 59%, 19%);
+  --fav-color: hsl(195, 68%, 47%);
+  --text-color: hsl(120, 100%, 50%);
+  --uncle-black: hsl(0, 0%, 0%);
+  --grey: #1c16163c;
+  --about: rgb(5, 66, 99);
+  --home: rgb(55, 160, 212);
+  --citrine: hsl(60, 100%, 50%);
+  --red: hsl(0, 90%, 48%);
+  --any: hsl(245, 85%, 48%);
+  --foot: hsl(204, 24%, 44%);
+}
+* {
+  margin: auto;
+  padding: 0%;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  color: var(--text-color);
+  text-align: center;
+  text-decoration: solid;
+  text-shadow: var(--red);
+}
+h2:hover {
+  color: var(--red);
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  background: var(--pin-color);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif, cursive, Impact, "Arial Narrow Bold",
+    sans-serif;
+  border: 1px var(--btn-color);
+  height: 30px;
+  border-radius: 10px;
+  align-items: center;
+  margin-left: 380px;
+  font-style: initial;
+  margin-top: 30px;
+  color: var(--any);
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  color: var(--citrine);
+  background-color: var(--any);
+  cursor: pointer;
+}
+buttons:hover {
+  color: var(--citrine);
+  background-color: var(--any);
+  cursor: pointer;
+}
+/*
+   home div class
+*/
+.home {
+  background: var(--home);
+  color: var(--small-color);
+}
+.logo {
+  height: 40px;
+  border-radius: 500px;
+}
+.home p {
+  color: var(--small-color);
+  font-family: fantasy, cursive, monospace;
+}
+
+/* nav bar*/
+nav {
+  padding-left: 400px;
+}
+nav a {
+  color: var(--text-color);
+  padding-left: 20px;
+}
+nav a:hover {
+  color: var(--uncle-black);
+  font-size: 16px;
+  font-family: monospace;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+/* HOME CONT CONTENT*/
+.logo2 {
+  height: 200px;
+  border-radius: 500px;
+  align-items: center;
+  margin-left: 330px;
+}
+.home-cont label {
+  text-decoration: none;
+  font-weight: bold;
+  font-style: initial;
+  padding-left: 350px;
+  font-size: 18px;
+  color: rgb(37, 14, 33);
+}
+
+/* ABOUT ME SECTION*/
+.about {
+  background-color: var(--pale-color);
+}
+.abt-cont {
+  display: flex;
+}
+.front-end {
+  border: 1px solid;
+  border-radius: 20px;
+  width: 300px;
+  height: 100px;
+  background: var(--big-color);
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+.front-end h3 {
+  font-size: 20px;
+  font-weight: bolder;
+  font-style: initial;
+  color: var(--red);
+  text-align: center;
+  text-decoration: none;
+}
+.front-end p {
+  font-size: 18px;
+  font-style: italic;
+  color: var(--citrine);
+  text-align: center;
+  text-decoration: none;
+}
+.about buttons {
+  margin-left: 350px;
+  text-align: center;
+  align-items: center;
+}
+
+/*project section*/
+.projects {
+  background: var(--about);
+}
+.project-cont {
+  display: flex;
+}
+.project-2 img {
+  border-radius: 25px;
+}
+buttons {
+  background: var(--pin-color);
+  font-size: 16px;
+  color: var(--uncle-black);
+  cursor: pointer;
+}
+/*contact me*/
+.contacts {
+  background-color: var(--home);
+}
+.row-left {
+  color: var(--citrine);
+}
+.container {
+  display: flex;
+}
+input {
+  color: var(--small-color);
+  background-color: var(--big-color);
+}
+label {
+  color: var(--any);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, monospace,
+    inherit;
+  font-size: 17px;
+}
+textarea {
+  background-color: var(--big-color);
+  color: var(--small-color);
+}
+
+/* footer section*/
+
+footer {
+  background-color: var(--foot);
+}
+navbar {
+  text-align: center;
+  padding-left: 250px;
+}
+navbar a {
+  color: var(--text-color);
+  padding-left: 20px;
+}
+
+navbar a:hover {
+  color: var(--uncle-black);
+  font-size: 16px;
+  font-family: monospace;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+footer p {
+  color: var(--uncle-black);
+  font-size: 17px;
+  padding-left: 250px;
+  padding-top: 50px;
+}
+footer p {
+  cursor: pointer;
+}
+footer p span :hover {
+  color: var(--citrine);
+}

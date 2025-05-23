@@ -1,17 +1,12 @@
-/*
- cascading style sheet
- full website
-*/
-
 :root {
   --pin-color: #ee82ee;
   --big-color: hsl(210, 20%, 4%);
-  --small-color: hsl(0, 0%, 100%);
+  --small-color: #ffffff;
   --btn-color: hsl(138, 100%, 54%);
   --pale-color: hsl(198, 59%, 19%);
   --fav-color: hsl(195, 68%, 47%);
   --text-color: hsl(120, 100%, 50%);
-  --uncle-black: hsl(0, 0%, 0%);
+  --uncle-black: #000000;
   --grey: #1c16163c;
   --about: rgb(5, 66, 99);
   --home: rgb(55, 160, 212);
@@ -20,206 +15,217 @@
   --any: hsl(245, 85%, 48%);
   --foot: hsl(204, 24%, 44%);
 }
+
 * {
-  margin: auto;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
+  color: var(--big-color);
+  line-height: 1.6;
+}
+
 a {
   text-decoration: none;
-}
-h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-transform: uppercase;
   color: var(--text-color);
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--uncle-black);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+h2 {
   text-align: center;
-  text-decoration: solid;
-  text-shadow: var(--red);
+  color: var(--text-color);
+  text-transform: uppercase;
+  margin: 40px 0 20px;
 }
-h2:hover {
-  color: var(--red);
-  font-family: Arial, Helvetica, sans-serif;
-}
+
 button {
-  background: var(--pin-color);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif, cursive, Impact, "Arial Narrow Bold",
-    sans-serif;
-  border: 1px var(--btn-color);
-  height: 30px;
+  background: var(--btn-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
   border-radius: 10px;
-  align-items: center;
-  margin-left: 380px;
-  font-style: initial;
-  margin-top: 30px;
-  color: var(--any);
+  cursor: pointer;
   font-weight: bold;
-  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
+
 button:hover {
-  color: var(--citrine);
-  background-color: var(--any);
-  cursor: pointer;
+  background: var(--red);
+  color: #fff;
+  transform: scale(1.05);
 }
-buttons:hover {
-  color: var(--citrine);
-  background-color: var(--any);
-  cursor: pointer;
-}
-/*
-   home div class
-*/
-.home {
-  background: var(--home);
-  color: var(--small-color);
-}
+
 .logo {
   height: 40px;
-  border-radius: 500px;
-}
-.home p {
-  color: var(--small-color);
-  font-family: fantasy, cursive, monospace;
+  border-radius: 50%;
 }
 
-/* nav bar*/
 nav {
-  padding-left: 400px;
-}
-nav a {
-  color: var(--text-color);
-  padding-left: 20px;
-}
-nav a:hover {
-  color: var(--uncle-black);
-  font-size: 16px;
-  font-family: monospace;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-}
-/* HOME CONT CONTENT*/
-.logo2 {
-  height: 200px;
-  border-radius: 500px;
-  align-items: center;
-  margin-left: 330px;
-}
-.home-cont label {
-  text-decoration: none;
-  font-weight: bold;
-  font-style: initial;
-  padding-left: 350px;
-  font-size: 18px;
-  color: rgb(37, 14, 33);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  background: var(--home);
 }
 
-/* ABOUT ME SECTION*/
+.home {
+  background: var(--home);
+  text-align: center;
+  padding: 50px 20px;
+  color: var(--small-color);
+}
+
+.home .logo2 {
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.home-cont label {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  color: #250e21;
+  margin-bottom: 5px;
+}
+
 .about {
   background-color: var(--pale-color);
+  padding: 50px 20px;
+  color: white;
 }
+
 .abt-cont {
   display: flex;
-}
-.front-end {
-  border: 1px solid;
-  border-radius: 20px;
-  width: 300px;
-  height: 100px;
-  background: var(--big-color);
-  margin-bottom: 40px;
-  margin-right: 20px;
-}
-.front-end h3 {
-  font-size: 20px;
-  font-weight: bolder;
-  font-style: initial;
-  color: var(--red);
-  text-align: center;
-  text-decoration: none;
-}
-.front-end p {
-  font-size: 18px;
-  font-style: italic;
-  color: var(--citrine);
-  text-align: center;
-  text-decoration: none;
-}
-.about buttons {
-  margin-left: 350px;
-  text-align: center;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-/*project section*/
+.front-end {
+  background: var(--big-color);
+  border-radius: 20px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+}
+
+.front-end h3 {
+  color: var(--red);
+  font-size: 20px;
+}
+
+.front-end p {
+  color: var(--citrine);
+  font-style: italic;
+}
+
 .projects {
   background: var(--about);
+  padding: 50px 20px;
+  color: white;
 }
+
 .project-cont {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
+
+.project-2 {
+  background: var(--grey);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+}
+
+.project-2:hover {
+  transform: translateY(-10px);
+}
+
 .project-2 img {
-  border-radius: 25px;
+  width: 100%;
+  display: block;
 }
-buttons {
-  background: var(--pin-color);
-  font-size: 16px;
-  color: var(--uncle-black);
-  cursor: pointer;
-}
-/*contact me*/
+
 .contacts {
   background-color: var(--home);
+  padding: 50px 20px;
+  color: white;
 }
-.row-left {
-  color: var(--citrine);
-}
+
 .container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
-input {
-  color: var(--small-color);
-  background-color: var(--big-color);
+
+.row-left {
+  max-width: 300px;
 }
-label {
-  color: var(--any);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, monospace,
-    inherit;
-  font-size: 17px;
+
+form {
+  max-width: 400px;
 }
-textarea {
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
   background-color: var(--big-color);
   color: var(--small-color);
 }
 
-/* footer section*/
+label {
+  font-weight: 600;
+  color: var(--any);
+}
 
 footer {
   background-color: var(--foot);
-}
-navbar {
   text-align: center;
-  padding-left: 250px;
-}
-navbar a {
-  color: var(--text-color);
-  padding-left: 20px;
+  padding: 30px 20px;
+  color: var(--uncle-black);
 }
 
-navbar a:hover {
+footer nav a {
+  margin: 0 15px;
+  color: var(--text-color);
+}
+
+footer nav a:hover {
   color: var(--uncle-black);
-  font-size: 16px;
-  font-family: monospace;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
 }
+
 footer p {
-  color: var(--uncle-black);
-  font-size: 17px;
-  padding-left: 250px;
-  padding-top: 50px;
+  margin-top: 20px;
 }
-footer p {
-  cursor: pointer;
-}
-footer p span :hover {
-  color: var(--citrine);
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }

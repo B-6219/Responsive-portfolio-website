@@ -1,204 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="style.css">
-
-  <!--<link rel="stylesheet" href="index.css">-->
-
-  <title>RESPONSIVE PORTFOLIO WEBSITE</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <main>
+  <header class="home" id="home">
+    <img src="back.jpeg" class="logo" alt="logo" />
+    <h1>B-Mickey</h1>
+    <p class="tagline">Full Stack Web Developer | Software Developer | Data Analyst</p>
 
-    <section class="home-section" id="home">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#project">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-
-      <!--HOME-->
-      <div class="home" id="home">
-        <img src="back.jpeg" class="logo">
-        <p>B-Mickey</p>
-
-        <nav>
-          <a href="#home">HOME</a>
-          <a href="#about">ABOUT ME</a>
-          <a href="#project">PROJECTS</a>
-          <a href="#contact">CONTACT US</a>
-        </nav>
-        <br>
-
-        <div class="home-cont">
-          <img src="images.jpeg" class="logo2">
-          <br>
-          <label>Full Stack web Developer</label>
-          <label>Software Developer</label>
-          <label>Data Analyst</label>
-
-          <div class="cv">
-            <button type="button">Download CV</button>
-            </ca<>
-
-            <div class="btn">
-              <button type="button">READ MORE</button>
-            </div>
-
-
-
-            <!--Font Awesome link-->
-            <div class="social-links">
-
-            </div>
-
-          </div>
-
-        </div>
+    <div class="home-cont">
+      <img src="images.jpeg" class="logo2" alt="Profile Image" />
+      <label>Full Stack Web Developer</label>
+      <label>Software Developer</label>
+      <label>Data Analyst</label>
+      <div>
+        <button>Download CV</button>
+        <button>Read More</button>
       </div>
+    </div>
+  </header>
 
-    </section>
-
-    <section class="about-section" id="about">
-
-      <!--About section-->
-      <div class="about">
-        <h2>About Me</h2>
-
-        <div class="abt-cont">
-
-          <div class="about-img">
-            <img src="front.jpeg" alt="">
-            </img>
-          </div>
-
-          <div class="front-end">
-            <h3>Experience</h3>
-            <p>2 + years <br>FrontEnd Development</p>
-            <p>Software Dev</p>
-          </div>
-
-          <div class="front-end">
-            <h3>Skills</h3>
-            <p>Web Dev</p>
-            <p>App Dev</p>
-            <p>Python Coding</p>
-
-          </div>
-
-          <div class="front-end">
-            <h3>Education</h3>
-            <p>BSch.Software Development</p>
-            <p>BSch. Data Science</p>
-
-          </div>
-        </div>
-        <br>
-        <buttons>Read More</buttons>
-        <br>
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <div class="abt-cont">
+      <div class="about-img">
+        <img src="front.jpeg" alt="About Me Image" style="width: 100%; border-radius: 20px;" />
       </div>
-
-    </section>
-
-    <section class="project-section" id="project">
-
-      <!--project-->
-      <div class="projects">
-        <h2>Projects</h2>
-        <br>
-        <div class="project-cont">
-
-          <div class="project-2">
-            <img src="images (1).jpeg" alt="">
-            <div class="Btn">
-              <buttons>Read More</buttons>
-            </div>
-
-          </div>
-
-          <div class="project-2">
-            <img src="images (1).jpeg" alt="">
-            <div class="Btn">
-              <buttons>Read More</buttons>
-            </div>
-
-          </div>
-
-          <div class="project-2">
-            <img src="images (1).jpeg" alt="">
-            <div class="Btn">
-              <buttons>Read More</buttons>
-            </div>
-
-          </div>
-
-        </div>
-
-
+      <div class="front-end">
+        <h3>Experience</h3>
+        <p>2+ Years Front-End Development</p>
+        <p>Software Development</p>
       </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <!---contact section-->
-
-      <div class="contacts">
-        <br>
-        <h2>Contact Me</h2>
-
-        <div class="container">
-          <div class="row-left">
-            <h3>Contact</h3>
-            <br>
-            <p>contact@example.com</p>
-            <p>0123456788</p>
-          </div>
-
-          <div class="row-right">
-
-            <form>
-              <label>Name</label><br>
-              <input type="text" required><br>
-              <label>Email</label><br>
-              <input type="email" required><br>
-              <label>Password</label><br>
-              <input type="password" required><br>
-              <label>Your Message</label><br>
-              <textarea name="Message" rows="6"></textarea>
-              <br>
-              <buttons>Submit</buttons>
-            </form>
-
-          </div>
-        </div>
+      <div class="front-end">
+        <h3>Skills</h3>
+        <p>Web Development</p>
+        <p>App Development</p>
+        <p>Python Programming</p>
       </div>
+      <div class="front-end">
+        <h3>Education</h3>
+        <p>BS in Software Development</p>
+        <p>BS in Data Science</p>
+      </div>
+    </div>
+    <br />
+    <button>Read More</button>
+  </section>
 
-    </section>
+  <section class="projects" id="project">
+    <h2>Projects</h2>
+    <div class="project-cont">
+      <div class="project-2">
+        <img src="images (1).jpeg" alt="Project 1" />
+        <div class="Btn"><button>Read More</button></div>
+      </div>
+      <div class="project-2">
+        <img src="images (1).jpeg" alt="Project 2" />
+        <div class="Btn"><button>Read More</button></div>
+      </div>
+      <div class="project-2">
+        <img src="images (1).jpeg" alt="Project 3" />
+        <div class="Btn"><button>Read More</button></div>
+      </div>
+    </div>
+  </section>
 
-    <section class="footer">
-      <!--footer-->
-      <footer>
-        <navbar>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#project">Projects</a>
-          <a href="#contact">Contacts</a>
+  <section class="contacts" id="contact">
+    <h2>Contact Me</h2>
+    <div class="container">
+      <div class="row-left">
+        <h3>Contact</h3>
+        <p>Email: contact@example.com</p>
+        <p>Phone: 0123456788</p>
+      </div>
+      <div class="row-right">
+        <form>
+          <label>Name</label>
+          <input type="text" required />
+          <label>Email</label>
+          <input type="email" required />
+          <label>Password</label>
+          <input type="password" required />
+          <label>Your Message</label>
+          <textarea rows="6" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-        </navbar>
-        <br>
-        <p>&copy;2024.
-          <span>B-Mickey</span>
-          All Rights Reserved
-        </p>
-      </footer>
-
-    </section>
-
-
-  </main>
+  <footer>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#project">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p>&copy; 2024 <span>B-Mickey</span> — All Rights Reserved</p>
+  </footer>
 
 </body>
-
 </html>
